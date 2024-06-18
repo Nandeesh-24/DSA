@@ -1,7 +1,6 @@
-package com.company.algorithms.sortingAlgorithms;
+package algorithms.sortingAlgorithms;
 
 import java.util.Arrays;
-import java.util.HashMap;
 
 public class ShellSort<T extends Comparable<T>> {
     private final T[] array;

@@ -1,6 +1,6 @@
-package com.company.algorithms.sortingAlgorithms;
+package algorithms.sortingAlgorithms;
 
-import com.company.utilMethos.HelperClass;
+import utilMethos.HelperClass;
 
 import java.util.Arrays;
 
