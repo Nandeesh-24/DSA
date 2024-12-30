@@ -1,18 +1,21 @@
 package algorithms.sortingAlgorithms;
 
+import utilMethos.HelperClass;
+
 import java.util.Arrays;
 
 public class InsertionSort {
     public static void main(String[] args) {
         int[] array = {20, 32, -19, 89, 9, 12, -22};
 
-        for (int firstUnsortedIndex = 1; firstUnsortedIndex < array.length; firstUnsortedIndex++) {
-            int newElement = array[firstUnsortedIndex];
-            int currentIndex;
-            for (currentIndex = firstUnsortedIndex; currentIndex > 0 && array[currentIndex - 1] > newElement; currentIndex--) {
-                array[currentIndex] = array[currentIndex - 1];
+        for (int i = 1; i < array.length; i++) {
+            int temp = array[i];
+            int j = i-1;
+            while (j >= 0 && array[j] > temp){
+                array[j+1] = array[j];
+                j--;
             }
-            array[currentIndex] = newElement;
+            array[j+1] = temp;
         }
 
         System.out.println(Arrays.toString(array));
